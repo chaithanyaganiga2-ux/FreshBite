@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreshBite - Online Food Ordering</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🍔 FreshBite</h1>
+    <p>Fresh food delivered to your door</p>
+    <button id="cartBtn">🛒 Cart (<span id="cartCount">0</span>)</button>
+  </header>
+
+  <section class="hero">
+    <h2>Delicious Food, Just One Click Away!</h2>
+    <p>Choose your favorite meals and place your order.</p>
+  </section>
+
+  <main>
+    <h2>Our Menu</h2>
+    <div class="menu">
+      <div class="card">
+        <div class="food">🍕</div>
+        <h3>Cheese Pizza</h3>
+        <p>₹199</p>
+        <button onclick="addToCart('Cheese Pizza', 199)">Add to Cart</button>
+      </div>
+      <div class="card">
+        <div class="food">🍔</div>
+        <h3>Veg Burger</h3>
+        <p>₹149</p>
+        <button onclick="addToCart('Veg Burger', 149)">Add to Cart</button>
+      </div>
+      <div class="card">
+        <div class="food">🍝</div>
+        <h3>White Sauce Pasta</h3>
+        <p>₹179</p>
+        <button onclick="addToCart('White Sauce Pasta', 179)">Add to Cart</button>
+      </div>
+      <div class="card">
+        <div class="food">🥤</div>
+        <h3>Cold Drink</h3>
+        <p>₹79</p>
+        <button onclick="addToCart('Cold Drink', 79)">Add to Cart</button>
+      </div>
+    </div>
+
+    <section class="cart">
+      <h2>Your Cart</h2>
+      <div id="cartItems">No items added yet.</div>
+      <h3>Total: ₹<span id="total">0</span></h3>
+      <button class="order" onclick="placeOrder()">Place Order</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 FreshBite | Online Food Ordering</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
